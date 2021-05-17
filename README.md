@@ -57,6 +57,16 @@ Call URL https://localhost:44374/api/pay with POST with JSON:
     "amount": 600
 }
 ```
+**Response:**
+```json
+{
+    "isProcessed": true,
+    "paymentState": {
+        "paymentState": 1,
+        "paymentStateDate": "2021-05-17T03:12:16.861417Z"
+    }
+}
+```
 ### POST
 Call URL https://localhost:44374/api/pay with POST with JSON:
 
@@ -67,6 +77,21 @@ Call URL https://localhost:44374/api/pay with POST with JSON:
     "expirationDate": "2021-06-02",
     "securityCode": "125",
     "amount": 15
+}
+```
+The post call should return a response like this if it is **successful**:
+```json
+{
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+    "title": "An error occured while processing your request.",
+    "status": 500,
+    "traceId": "|c699ec21-4e0dd363dcff01cb."
+}
+```
+If it is **faild**:"
+```json
+{
+    "error": "Payment could not be processed"
 }
 ```
 ### GET
