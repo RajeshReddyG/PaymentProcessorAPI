@@ -3,16 +3,17 @@ The API Controller has function that responds for POST request which is useful f
 
 ## Problem Statement
 
-**Write a WebAPI with only 1 method called “ProcessPayment” that receives a request like this:**
+***Write a WebAPI with only 1 method called “ProcessPayment” that receives a request like this:
 - CreditCardNumber (mandatory, string, it should be a valid CCN)
 - CardHolder: (mandatory, string)
 - ExpirationDate (mandatory, DateTime, it cannot be in the past)
 - SecurityCode (optional, string, 3 digits)
 - Amount (mandatoy decimal, positive amount)
-**Write a Payment domain/entity with the same properties as the request and a second entity to store
+***
+***Write a Payment domain/entity with the same properties as the request and a second entity to store
 the payment state (pending, processed, failed). Use Entity framework code first approach, write
 entity configurations and generate the migrations.
-The response of this method should be 1 of the followings based on**
+The response of this method should be 1 of the followings based on***
 - Payment is processed: 200 OK
 - The request is invalid: 400 bad request
 - Any error: 500 internal server error
