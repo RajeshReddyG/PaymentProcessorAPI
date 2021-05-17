@@ -46,6 +46,7 @@ This should set up database according to the Entity Migrations. Once the databas
 ## Example of POSTMAN call
 <ins> Note: </ins> 44374 is the port number
 ### POST
+##Example 1
 Call URL https://localhost:44374/api/pay with POST with JSON:
 
 ```json
@@ -68,6 +69,7 @@ Call URL https://localhost:44374/api/pay with POST with JSON:
 }
 ```
 ### POST
+##Example 2
 Call URL https://localhost:44374/api/pay with POST with JSON:
 
 ```json
@@ -88,7 +90,7 @@ The post call should return a response like this if it is **successful**:
     "traceId": "|c699ec21-4e0dd363dcff01cb."
 }
 ```
-If it is **faild**:"
+If it is **faild**:
 ```json
 {
     "error": "Payment could not be processed"
@@ -96,7 +98,7 @@ If it is **faild**:"
 ```
 ### GET
 Call URL https://localhost:44374/api/pay with GET  
-This Should return list of Objects
+This Should return the following response if the application is online
 ```
 Payment Processor is online
 ```
