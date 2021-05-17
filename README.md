@@ -4,7 +4,7 @@ The API Controller has function that responds for POST request which is useful f
 ## Problem Statement
 
 **Write a WebAPI with only 1 method called “ProcessPayment” that receives a request like this:**
-CreditCardNumber (mandatory, string, it should be a valid CCN)
+- CreditCardNumber (mandatory, string, it should be a valid CCN)
 - CardHolder: (mandatory, string)
 - ExpirationDate (mandatory, DateTime, it cannot be in the past)
 - SecurityCode (optional, string, 3 digits)
