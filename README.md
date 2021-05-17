@@ -44,7 +44,7 @@ update-database
 ```
 
 ## Example of POSTMAN call
-<ins> Note: </ins> 44302 is the port number
+<ins> Note: </ins> 44374 is the port number
 ### POST
 Call URL https://localhost:44374/api/pay with POST with JSON:
 
@@ -72,6 +72,6 @@ Call URL https://localhost:44374/api/pay with POST with JSON:
 ### GET
 Call URL https://localhost:44374/api/pay with GET  
 This Should return list of Objects
-```json
-
+```
+Payment Processor is online
 ```
