@@ -25,12 +25,12 @@ The payment could be processed using different payment providers (external servi
 ***
 The payment gateway that should be used to process each payment follows the next set of business
 rules
-- a) If the amount to be paid is less than £20, use ICheapPaymentGateway.
-- b) If the amount to be paid is £21-500, use IExpensivePaymentGateway if available. Otherwise, retry
+a. If the amount to be paid is less than £20, use ICheapPaymentGateway.
+b. If the amount to be paid is £21-500, use IExpensivePaymentGateway if available. Otherwise, retry
 only once with ICheapPaymentGateway.
-- c) If the amount is > £500, try only PremiumPaymentService and retry up to 3 times in case payment
+c. If the amount is > £500, try only PremiumPaymentService and retry up to 3 times in case payment
 does not get processed
-- d) Store/update the payment and payment state entities created previously once the processing is
+d. Store/update the payment and payment state entities created previously once the processing is
 completed.
 
 ## DB Creation
