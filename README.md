@@ -9,19 +9,19 @@ The API Controller has function that responds for POST request which is useful f
 - ExpirationDate (mandatory, DateTime, it cannot be in the past)
 - SecurityCode (optional, string, 3 digits)
 - Amount (mandatoy decimal, positive amount)
-Write a Payment domain/entity with the same properties as the request and a second entity to store
+*Write a Payment domain/entity with the same properties as the request and a second entity to store
 the payment state (pending, processed, failed). Use Entity framework code first approach, write
 entity configurations and generate the migrations.
-The response of this method should be 1 of the followings based on
+The response of this method should be 1 of the followings based on*
 - Payment is processed: 200 OK
 - The request is invalid: 400 bad request
 - Any error: 500 internal server error
 - The request should be validated before processed.
-The payment could be processed using different payment providers (external services) called:
+*The payment could be processed using different payment providers (external services) called:*
 - IExpensivePaymentGateway or
 - ICheapPaymentGateway.
-The payment gateway that should be used to process each payment follows the next set of business
-rules:
+*The payment gateway that should be used to process each payment follows the next set of business
+rules:*
 a) If the amount to be paid is less than £20, use ICheapPaymentGateway.
 b) If the amount to be paid is £21-500, use IExpensivePaymentGateway if available. Otherwise, retry
 only once with ICheapPaymentGateway.
