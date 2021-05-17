@@ -46,7 +46,7 @@ This should set up database according to the Entity Migrations. Once the databas
 ## Example of POSTMAN call
 <ins> Note: </ins> 44374 is the port number
 ### POST
-##Example 1
+## Example 1
 Call URL https://localhost:44374/api/pay with POST with JSON:
 
 ```json
@@ -69,7 +69,7 @@ Call URL https://localhost:44374/api/pay with POST with JSON:
 }
 ```
 ### POST
-##Example 2
+## Example 2
 Call URL https://localhost:44374/api/pay with POST with JSON:
 
 ```json
