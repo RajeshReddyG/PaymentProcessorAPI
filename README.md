@@ -42,7 +42,7 @@ completed.
 ```bash
 update-database
 ```
-
+This should set up database according to the Entity Migrations. Once the database and tables are created, We are all set to run the application.
 ## Example of POSTMAN call
 <ins> Note: </ins> 44374 is the port number
 ### POST
